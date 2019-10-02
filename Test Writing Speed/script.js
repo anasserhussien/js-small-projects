@@ -31,6 +31,19 @@ function runTimer(){
 function spellCheck(){
     let textEntered = testArea.value;
     console.log(textEntered);
+
+    let originTextMatch = originText.substring(0,textEntered.length);
+
+    if (textEntered == originText){
+        testWrapper.style.borderColor = "#429890";
+    }
+    else{
+        if (textEntered == originTextMatch){
+            testWrapper.style.borderColor = "#65CCf3";
+        }else{
+            testWrapper.style.borderColor = "#E95D0F"
+        }
+    }
 }
 
 
