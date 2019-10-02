@@ -21,6 +21,9 @@ function spellCheck(){
 // Start the timer:
 function start(){
     let textEnteredLen = testArea.value.length;
+    if (textEnteredLen === 0){
+        setInterval(runTimer,10);
+    }
     console.log(textEnteredLen);
 }
 
