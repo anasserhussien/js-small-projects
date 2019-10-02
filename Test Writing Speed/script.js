@@ -64,7 +64,14 @@ function start(){
 
 // Reset everything:
 function reset(){
-    console.log("reset clicked");
+    //console.log("reset clicked");
+    clearInterval(interval);
+    interval =0;
+    timerRunning = false;
+    timer = [0,0,0,0];
+    testWrapper.style.borderColor = "grey";
+    testArea.value = "";
+    theTimer.innerHTML = "00:00:00";
 }
 
 
